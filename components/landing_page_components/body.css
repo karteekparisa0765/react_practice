@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-animate {
+  animation: fadeUp 2s ease-out forwards;
+}
+.text-animate2 {
+  animation: fadeUp 3s ease-out forwards;
+}
+
+@keyframes darkGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.dark-animated-bg {
+  background: linear-gradient(
+    120deg,
+    #000000,
+    #020617,
+    #020617,
+    #0a0f2c,
+    #000000
+  );
+  background-size: 300% 300%;
+  animation: darkGradient 10s ease infinite;
+}
